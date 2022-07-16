@@ -3,11 +3,18 @@ import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
 import './App.css';
 import {Container ,Navbar ,NavbarBrand} from 'reactstrap';
-import {NucampLogo} from './app/assests/img/logo'
+import NucampLogo from './app/assests/img/logo.png'
 function App() {
   return (
     <div className="App">
-     Welcome
+     <Navbar dark color="primary" sticky="top" expand="md">
+         <Container>
+          <NavbarBrand href="/">
+              <img src={NucampLogo} alt="nucamp logo" />
+          </NavbarBrand>
+         </Container>
+      </Navbar> 
+      I am some how ready
     </div>
   );
 }
