@@ -3,7 +3,12 @@ import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
 import './App.css';
 import {Container ,Navbar ,NavbarBrand} from 'reactstrap';
-import NucampLogo from './app/assests/img/logo.png'
+import NucampLogo from './app/assests/img/logo.png';
+
+import CampsiteCard from './features/campsites/CampsiteCard.js';
+
+import { CAMPSITES } from './app/shared/CAMPSITES';
+
 function App() {
   return (
     <div className="App">
@@ -14,7 +19,7 @@ function App() {
           </NavbarBrand>
          </Container>
       </Navbar> 
-      I am some how ready
+      <CampsiteCard campsite={CAMPSITES[0]} />
     </div>
   );
 }
