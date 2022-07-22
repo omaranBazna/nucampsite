@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Row, Card, CardImg, CardBody } from "reactstrap";
 
-export default CampsiteDetails = (props) => {
+const CampsiteDetails = (props) => {
   const { name, image, descriptio } = props.selected;
 
   return (
@@ -12,3 +12,4 @@ export default CampsiteDetails = (props) => {
     </Card>
   );
 };
+export default CampsiteDetails;

@@ -2,8 +2,8 @@ import { Container, Row, Col, Button } from "reactstrap";
 import CampsitesList from "../../features/campsites/CampsitesList";
 import CampsiteDetails from "../../features/campsites/CampsiteDetails";
 import { selectRandomCampsite } from "../../features/campsites/campsitesSlice";
-
-export default CampistesDirectryPage = () => {
+import React from "react";
+const CampsitesDirectryPage = () => {
   const selectedCampsite = selectRandomCampsite();
   return (
     <Container>
@@ -18,3 +18,4 @@ export default CampistesDirectryPage = () => {
     </Container>
   );
 };
+export default CampsitesDirectryPage;
