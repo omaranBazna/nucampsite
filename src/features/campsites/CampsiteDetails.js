@@ -1,15 +1,19 @@
 import React from "react";
-import { Col, Row, Card, CardImg, CardBody } from "reactstrap";
+import { Col, CardText, Card, CardImg, CardBody } from "reactstrap";
 
-const CampsiteDetails = (props) => {
-  const { name, image, description } = props.selected;
+const CampsiteDetails = ({ campsite }) => {
+  const { name, image, description } = campsite;
 
   return (
-    <Card>
-      <CardImg top src={image} />
+    <Col md="12" className="m-4">
+      <Card>
+        <CardImg top src={image} alt={name} />
 
-      <CardBody>{description}</CardBody>
-    </Card>
+        <CardBody>
+          <CardText>{description}</CardText>
+        </CardBody>
+      </Card>
+    </Col>
   );
 };
 export default CampsiteDetails;
