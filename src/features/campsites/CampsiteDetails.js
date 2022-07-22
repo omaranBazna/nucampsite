@@ -1,16 +1,14 @@
-import React from 'react'
-import {Col,Row,Card,CardImg,CardBody} from bootstrap;
+import React from "react";
+import { Col, Row, Card, CardImg, CardBody } from "reactstrap";
 
-export default CampsiteDetails =(props)=>{
-const {name ,image ,descriptio} = props.selected;
+export default CampsiteDetails = (props) => {
+  const { name, image, descriptio } = props.selected;
 
-return (
+  return (
     <Card>
-        <CardImg top src={image} />
+      <CardImg top src={image} />
 
-        <CardBody>
-             {descriptio}
-        </CardBody>
+      <CardBody>{descriptio}</CardBody>
     </Card>
-)
-}
+  );
+};
