@@ -3,9 +3,7 @@ import logo from "./logo.svg";
 import { Counter } from "./features/counter/Counter";
 import "./App.css";
 
-import CampsitesList from "./features/campsites/CampsitesList";
-
-import { CAMPSITES } from "./app/shared/CAMPSITES";
+import CampsitesDirectryPage from "./app/pages/CampsitesDirectryPage";
 import Header from "../src/components/Header";
 import Footer from "./components/Footer";
 function App() {
@@ -13,7 +11,7 @@ function App() {
     <div className="App">
       <Header />
 
-      <CampsitesList />
+      <CampsitesDirectryPage></CampsitesDirectryPage>
       <Footer />
     </div>
   );
