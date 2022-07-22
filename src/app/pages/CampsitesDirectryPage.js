@@ -1,14 +1,15 @@
 import { Container, Row, Col, Button } from "reactstrap";
 import CampsitesList from "../../features/campsites/CampsitesList";
 import CampsiteDetails from "../../features/campsites/CampsiteDetails";
-import { selectRandomCampsite } from "../../features/campsites/campsitesSlice";
+///import { selectRandomCampsite } from "../../features/campsites/campsitesSlice";
+import { selectCampsiteById } from "../../features/campsites/campsitesSlice";
 import React from "react";
 import { useState } from "react";
 
 const CampsitesDirectryPage = () => {
-  const [campsite, setCampsite] = useState(selectRandomCampsite());
+  const [campsite, setCampsite] = useState(selectCampsiteById(0));
   const selectedCampsite = () => {
-    const select = selectRandomCampsite();
+    const select = selectCampsiteById(0);
     setCampsite(select);
     return -1;
   };
