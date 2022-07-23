@@ -18,7 +18,10 @@ const Header = () => {
       </NavbarBrand>
       <Nav className="ms-auto" navbar>
         <NavItem>
-          <NavLink className="nav-link" to="/"></NavLink>
+          <NavLink className="nav-link" to="/">
+            <i className="fa fa-home fa-lg" />
+            Home
+          </NavLink>
         </NavItem>
         <NavItem>
           <NavLink className="nav-link" to="/campsites"></NavLink>
