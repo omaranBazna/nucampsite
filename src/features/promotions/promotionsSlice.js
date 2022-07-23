@@ -1,5 +1,5 @@
-import {PROMOTIONS} form '../../app/shared/PROMOTIONS';
+import { PROMOTIONS } from "../../app/shared/PROMOTIONS";
 
-export const selectFeuturedPromotion=()=>{
-    return PROMOTIONS.find(pro=>pro.featured)
-}
+export const selectFeuturedPromotion = () => {
+  return PROMOTIONS.find((pro) => pro.featured);
+};
