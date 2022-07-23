@@ -17,7 +17,8 @@ const Header = () => {
         <img src={NucampLogo} className="float-start" alt="nucamp logo" />
         <h1 className="mt-1">Nucamp</h1>
       </NavbarBrand>
-      <Collapse isOpen={false}>
+      <NavbarToggler />
+      <Collapse isOpen={false} navbar>
         <Nav className="ms-auto" navbar>
           <NavItem>
             <NavLink className="nav-link" to="/">
