@@ -13,9 +13,15 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route> </Route>
-        <Route> </Route>
-        <Route> </Route>
+        <Route path="/" element={<HomePage />}>
+          {" "}
+        </Route>
+        <Route path="/contact" element={<ContactPage />}>
+          {" "}
+        </Route>
+        <Route path="/campsites" element={<CampsitesDirectryPage />}>
+          {" "}
+        </Route>
       </Routes>
       <Header />
 
