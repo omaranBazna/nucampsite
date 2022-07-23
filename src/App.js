@@ -12,6 +12,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div className="App">
+      <Header />
       <Routes>
         <Route path="/" element={<HomePage />}>
           {" "}
@@ -23,7 +24,6 @@ function App() {
           {" "}
         </Route>
       </Routes>
-      <Header />
 
       <Footer />
     </div>
