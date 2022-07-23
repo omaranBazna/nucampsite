@@ -7,21 +7,17 @@ import React from "react";
 import { useState } from "react";
 
 const CampsitesDirectryPage = () => {
-  const [campsite, setCampsite] = useState(selectCampsiteById(0));
-  const selectedCampsite = () => {
-    const select = selectCampsiteById(0);
-    setCampsite(select);
-    return -1;
-  };
+  const [campsiteid, setCampsiteId] = useState(0);
+  const selectedCampsite = selectCampsiteById(campsiteid);
+
   return (
     <Container>
-      <Button onClick={selectedCampsite}> Choose random campsite </Button>
       <Row>
         <Col sm="5" md="7">
-          <CampsitesList> </CampsitesList>
+          <CampsitesList setCampsiteId={setCampsiteId}> </CampsitesList>
         </Col>
         <Col sm="7" md="5">
-          <CampsiteDetails campsite={campsite}></CampsiteDetails>
+          <CampsiteDetails campsite={selectedCampsite}></CampsiteDetails>
         </Col>
       </Row>
     </Container>
