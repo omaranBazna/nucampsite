@@ -11,14 +11,19 @@ import NucampLogo from "../app/assests/img/logo.png";
 import { useState } from "react";
 
 const Header = () => {
+  const [menu, setMenu] = useState(false);
   return (
     <Navbar dark color="primary" sticky="top" expand="md">
       <NavbarBrand className="ms-5" href="/">
         <img src={NucampLogo} className="float-start" alt="nucamp logo" />
         <h1 className="mt-1">Nucamp</h1>
       </NavbarBrand>
-      <NavbarToggler />
-      <Collapse isOpen={false} navbar>
+      <NavbarToggler
+        onClick={() => {
+          setMenu(!menu);
+        }}
+      />
+      <Collapse isOpen={menu} navbar>
         <Nav className="ms-auto" navbar>
           <NavItem>
             <NavLink className="nav-link" to="/">
