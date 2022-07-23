@@ -9,6 +9,7 @@ import "./App.css";
 import CampsitesDirectryPage from "./app/pages/CampsitesDirectryPage";
 import Header from "../src/components/Header";
 import Footer from "./components/Footer";
+import AboutPage from "./app/pages/AboutPage";
 function App() {
   return (
     <div className="App">
@@ -17,10 +18,16 @@ function App() {
         <Route path="/" element={<HomePage />}>
           {" "}
         </Route>
+
         <Route path="/contact" element={<ContactPage />}>
           {" "}
         </Route>
+
         <Route path="/campsites" element={<CampsitesDirectryPage />}>
+          {" "}
+        </Route>
+
+        <Route path="/about" element={<AboutPage />}>
           {" "}
         </Route>
       </Routes>
