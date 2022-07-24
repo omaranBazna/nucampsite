@@ -7,7 +7,7 @@ import {
   NavItem,
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
-import NucampLogo from "../app/assests/img/logo.png";
+import NucampLogo from "../app/assets/img/logo.png";
 import { useState } from "react";
 
 const Header = () => {
