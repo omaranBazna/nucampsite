@@ -6,15 +6,16 @@ import { selectFeaturedCampsite } from "../campsites/campsitesSlice";
 const DisplayList = () => {
   const items = [selectFeaturedCampsite(), selectFeuturedPromotion()];
 
-  return <Row>
-
-    {
-        items.map((item,index)=>{
-            return (
-
-            )
-        })
-    }
-  </Row>;
+  return (
+    <Row>
+      {items.map((item, index) => {
+        return (
+          <Col md className="m-1" key={index}>
+            <DisplayCard item={item} />
+          </Col>
+        );
+      })}
+    </Row>
+  );
 };
 export default DisplayList;
