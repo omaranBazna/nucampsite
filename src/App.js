@@ -34,7 +34,7 @@ function App() {
 
         <Route
           path="/directory/:campsiteid"
-          element={CampsiteDetailedPage}
+          element={<CampsiteDetailedPage />}
         ></Route>
       </Routes>
 
