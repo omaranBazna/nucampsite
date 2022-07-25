@@ -15,7 +15,7 @@ const SubHeader = ({ current, detail }) => {
               <Link to="/directory">Directory</Link>
             </BreadcrumbItem>
           )}
-          <BreadcrumbItem acitve>{current}</BreadcrumbItem>
+          <BreadcrumbItem active>{current}</BreadcrumbItem>
         </Breadcrumb>
         <h2>{current}</h2>
         <hr />

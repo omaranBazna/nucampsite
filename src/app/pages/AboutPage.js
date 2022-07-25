@@ -1,9 +1,10 @@
 import { Col, Row, Container, Card, CardBody, CardHeader } from "reactstrap";
 import PartnersList from "../../features/partners/PartnersList";
-
+import SubHeader from "../../components/SubHeader";
 const AboutPage = ({ list }) => {
   return (
     <Container>
+      <SubHeader current={"About US"} />
       <Row className="row-content">
         <Col sm="6">
           <h3>Our Mission</h3>
