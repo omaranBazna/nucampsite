@@ -9,7 +9,7 @@ const CampsiteDetailedPage = () => {
   const campsite = selectCampsiteById(campsiteid);
   return (
     <Container>
-      <SubHeader current={campsite.id} detail={true} />
+      <SubHeader current={campsite.name} detail={true} />
       <Row>
         <CampsiteDetails campsite={campsite} />
         <CommentsList campsiteid={campsiteid} />
