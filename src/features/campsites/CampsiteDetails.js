@@ -5,7 +5,7 @@ const CampsiteDetails = ({ campsite }) => {
   const { name, image, description } = campsite;
 
   return (
-    <Col md="12" className="m-4">
+    <Col md="5" className="m-4">
       <Card>
         <CardImg top src={image} alt={name} />
 

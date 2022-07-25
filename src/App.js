@@ -11,10 +11,13 @@ import Header from "../src/components/Header";
 import Footer from "./components/Footer";
 import AboutPage from "./app/pages/AboutPage";
 import CampsiteDetailedPage from "./app/pages/CampsiteDetailedPage";
+
+import CommentsList from "./features/Comments/CommentsList";
 function App() {
   return (
     <div className="App">
       <Header />
+
       <Routes>
         <Route path="/" element={<HomePage />}>
           {" "}
