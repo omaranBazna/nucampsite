@@ -33,8 +33,9 @@ const ContactPage = () => {
       <Row className="row-content">
         <Col>
           <h2>Send Us Your Feedback</h2>
+          <hr />
         </Col>
-        <Col></Col>
+        <Col md="10">TBD: ContactForm</Col>
       </Row>
     </Container>
   );
