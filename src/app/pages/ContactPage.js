@@ -30,7 +30,10 @@ const ContactPage = () => {
           </a>
         </Col>
       </Row>
-      <Row className="row-content"></Row>
+      <Row className="row-content">
+        <Col></Col>
+        <Col></Col>
+      </Row>
     </Container>
   );
 };
