@@ -16,11 +16,15 @@ const ContactForm = () => {
     >
       <Form>
         <FormGroup row>
-          <Label></Label>
+          <Label htmlFor="firstName" md="2">
+            First Name
+          </Label>
           <Col md="10"></Col>
         </FormGroup>
         <FormGroup row>
-          <Label></Label>
+          <Label htmlFor="lastName" md="2">
+            Last Name
+          </Label>
           <Col md="10"></Col>
         </FormGroup>
         <FormGroup row>
