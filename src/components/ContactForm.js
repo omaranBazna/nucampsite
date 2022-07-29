@@ -16,6 +16,12 @@ const ContactForm = () => {
     >
       <Form>
         <FormGroup row></FormGroup>
+        <FormGroup row></FormGroup>
+        <FormGroup row></FormGroup>
+        <FormGroup row></FormGroup>
+        <FormGroup row></FormGroup>
+        <FormGroup row></FormGroup>
+        <FormGroup row></FormGroup>
       </Form>
     </Formik>
   );
