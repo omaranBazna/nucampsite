@@ -15,12 +15,30 @@ const ContactForm = () => {
       }}
     >
       <Form>
-        <FormGroup row></FormGroup>
-        <FormGroup row></FormGroup>
-        <FormGroup row></FormGroup>
-        <FormGroup row></FormGroup>
-        <FormGroup row></FormGroup>
-        <FormGroup row></FormGroup>
+        <FormGroup row>
+          <Label></Label>
+          <Col></Col>
+        </FormGroup>
+        <FormGroup row>
+          <Label></Label>
+          <Col></Col>
+        </FormGroup>
+        <FormGroup row>
+          <Label></Label>
+          <Col></Col>
+        </FormGroup>
+        <FormGroup row>
+          <Label></Label>
+          <Col></Col>
+        </FormGroup>
+        <FormGroup row>
+          <Label></Label>
+          <Col></Col>
+        </FormGroup>
+        <FormGroup row>
+          <Label></Label>
+          <Col></Col>
+        </FormGroup>
         <FormGroup row></FormGroup>
       </Form>
     </Formik>
