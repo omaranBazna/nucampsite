@@ -29,25 +29,25 @@ const Footer = () => {
               className="btn btn-social-icon btn-instagram"
               href="http://instagram.com/"
             >
-              <i className="fa fa-instagram" />
+              <i className="fa-brands fa-instagram" />
             </a>{" "}
             <a
               className="btn btn-social-icon btn-facebook"
               href="http://www.facebook.com/"
             >
-              <i className="fa fa-facebook" />
+              <i className="fa-brands fa-facebook" />
             </a>{" "}
             <a
               className="btn btn-social-icon btn-twitter"
               href="http://twitter.com/"
             >
-              <i className="fa fa-twitter" />
+              <i className="fa-brands fa-twitter" />
             </a>{" "}
             <a
               className="btn btn-social-icon btn-google"
               href="http://youtube.com/"
             >
-              <i className="fa fa-youtube" />
+              <i className="fa-brands fa-youtube" />
             </a>
           </Col>
           <Col sm="4" className="text-center">
