@@ -17,23 +17,23 @@ const ContactForm = () => {
       <Form>
         <FormGroup row>
           <Label></Label>
-          <Col></Col>
+          <Col md="10"></Col>
         </FormGroup>
         <FormGroup row>
           <Label></Label>
-          <Col></Col>
+          <Col md="10"></Col>
         </FormGroup>
         <FormGroup row>
           <Label></Label>
-          <Col></Col>
+          <Col md="10"></Col>
         </FormGroup>
         <FormGroup row>
           <Label></Label>
-          <Col></Col>
+          <Col md="10"></Col>
         </FormGroup>
         <FormGroup row>
           <Label></Label>
-          <Col></Col>
+          <Col md="10"></Col>
         </FormGroup>
         <FormGroup row>
           <Label></Label>
