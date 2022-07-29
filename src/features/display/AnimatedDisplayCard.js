@@ -14,13 +14,15 @@ const AnimatedDisplayCard = ({ item }) => {
     setToggle(true);
   }, []);
   return (
-    <Card>
-      <CardImg src={image} alt={name}></CardImg>
-      <CardBody>
-        <CardTitle>{name}</CardTitle>
-        <CardText>{description}</CardText>
-      </CardBody>
-    </Card>
+    <animated.div style={animatedstyle}>
+      <Card>
+        <CardImg src={image} alt={name}></CardImg>
+        <CardBody>
+          <CardTitle>{name}</CardTitle>
+          <CardText>{description}</CardText>
+        </CardBody>
+      </Card>
+    </animated.div>
   );
 };
 export default AnimatedDisplayCard;
