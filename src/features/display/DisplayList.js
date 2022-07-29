@@ -15,9 +15,11 @@ const DisplayList = () => {
     <Row>
       {items.map((item, index) => {
         return (
-          <Col md className="m-1" key={index}>
-            <AnimatedDisplayCard item={item} />
-          </Col>
+          item && (
+            <Col md className="m-1" key={index}>
+              <AnimatedDisplayCard item={item} />
+            </Col>
+          )
         );
       })}
     </Row>
