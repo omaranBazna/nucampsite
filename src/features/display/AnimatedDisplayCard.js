@@ -7,7 +7,7 @@ const AnimatedDisplayCard = ({ item }) => {
   const [toggle, setToggle] = useState(false);
   const animatedstyle = useSpring({
     opacity: toggle ? 1 : 0,
-    transform: toggle ? "scale(1,1)" : "scale(1,0)",
+    transform: toggle ? "translateY(0)" : "translateY(50px)",
     config: { duration: 500 },
   });
   useEffect(() => {
