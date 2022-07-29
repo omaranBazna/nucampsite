@@ -28,15 +28,19 @@ const ContactForm = () => {
           <Col md="10"></Col>
         </FormGroup>
         <FormGroup row>
-          <Label></Label>
+          <Label htmlFor="phoneNum" md="2">
+            Phone
+          </Label>
           <Col md="10"></Col>
         </FormGroup>
         <FormGroup row>
-          <Label></Label>
+          <Label htmlFor="email" md="2">
+            Email
+          </Label>
           <Col md="10"></Col>
         </FormGroup>
         <FormGroup row>
-          <Label></Label>
+          <Label check md={{ size: 4, offset: 2 }}></Label>
           <Col md="4"></Col>
         </FormGroup>
         <FormGroup row>
