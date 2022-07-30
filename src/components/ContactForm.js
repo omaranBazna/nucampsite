@@ -18,6 +18,7 @@ const ContactForm = () => {
         feedback: "",
       }}
       onSubmit={handleSubmit}
+      validate={validateContactForm}
     >
       <Form>
         <FormGroup row>
