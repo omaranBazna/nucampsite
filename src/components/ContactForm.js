@@ -59,28 +59,33 @@ const ContactForm = () => {
             <Field
               name="email"
               placeholder="Email"
+              type="email"
               className="form-control"
             ></Field>
           </Col>
         </FormGroup>
         <FormGroup row>
           <Label check md={{ size: 4, offset: 2 }}>
-            May we contact you
+            <Field name="agree" type="checkbox" className="form-check-input" />
+            {"  "}
+            May we contact you?
           </Label>
           <Col md="4">
-            <Field
-              name="contactType"
-              as="select"
-              className="form-control"
-            ></Field>
-            <option>Phone</option>
-            <option>Email</option>
+            <Field name="contactType" as="select" className="form-control">
+              <option>Phone</option>
+              <option>Email</option>
+            </Field>
           </Col>
         </FormGroup>
         <FormGroup row>
           <Label htmlFor="feedback"></Label>
           <Col md="10">
-            <Form className="form-control"></Form>
+            <Field
+              name="feedback"
+              as="textarea"
+              rows="12"
+              className="form-control"
+            ></Field>
           </Col>
         </FormGroup>
         <FormGroup row></FormGroup>
