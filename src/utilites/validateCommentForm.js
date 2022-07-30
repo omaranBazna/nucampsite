@@ -1,4 +1,4 @@
-export const validateContactForm = (values) => {
+export const validateCommentForm = (values) => {
   const errors = {};
   ///checking  the rating
   !values.rating ? (errors.rating = "Required") : null;
