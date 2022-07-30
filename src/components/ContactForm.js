@@ -2,6 +2,7 @@ import { Button, Label, FormGroup, Col } from "reactstrap";
 import { Formik, Field, Form } from "formik";
 
 const ContactForm = () => {
+  const handleSubmit = () => {};
   return (
     <Formik
       initialValues={{
