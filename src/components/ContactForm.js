@@ -78,7 +78,10 @@ const ContactForm = () => {
           </Col>
         </FormGroup>
         <FormGroup row>
-          <Label htmlFor="feedback">Your feedback</Label>
+          <Label md="2" htmlFor="feedback">
+            Your feedback
+          </Label>
+
           <Col md="10">
             <Field
               name="feedback"
@@ -88,7 +91,6 @@ const ContactForm = () => {
             ></Field>
           </Col>
         </FormGroup>
-        <FormGroup row></FormGroup>
       </Form>
     </Formik>
   );
