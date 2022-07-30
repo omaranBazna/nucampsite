@@ -5,7 +5,15 @@ export const validateContactForm = (values) => {
     errors.firstName = "required";
   } else if (values.firstName.length < 2) {
     errors.firstName = "must be at least 2 characters";
-  } else if (values.firstName.length > 50) {
-    errors.firstName = "must be 50 or less characters";
+  } else if (values.firstName.length > 15) {
+    errors.firstName = "must be 15 or less characters";
+  }
+
+  if (!values.lastName) {
+    errors.lastName = "required";
+  } else if (values.lastName.length < 2) {
+    errors.lastName = "must be at least 2 characters";
+  } else if (values.lastName.length > 15) {
+    errors.lastName = "must be 15 or less characters";
   }
 };
