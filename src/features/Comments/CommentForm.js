@@ -3,6 +3,14 @@ import { useState } from "react";
 import { Formik, Field, Form } from "formik";
 const CommentForm = ({ campsiteId }) => {
   const [modalOpen, setModalOpen] = useState(false);
+  const handleSubmit = (values) => {
+    const comment = {
+      campsiteId: parseInt(campsiteId),
+      rating: values.rating,
+      author: values.author,
+      text: values.commentText,
+    };
+  };
   return (
     <>
       <Button onClick={() => setModalOpen(true)}>
