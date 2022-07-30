@@ -18,4 +18,8 @@ export const validateContactForm = (values) => {
   }
 
   const reg = /^\d+$/;
+
+  if (!reg.test(values.phoneNum)) {
+    errors.phoneNum = "phone number should only contains numbers";
+  }
 };
