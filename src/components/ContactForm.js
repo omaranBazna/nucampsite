@@ -31,10 +31,13 @@ const ContactForm = () => {
               placeholder="First Name"
               className="form-control"
             ></Field>
+            {/*}
             <ErrorMessage name="firstName">
-              {(msg) => {
-                <p>{msg}</p>;
-              }}
+              {(msg) => <p>Error</p>}
+            </ErrorMessage>
+            */}
+            <ErrorMessage name="firstName">
+              {(msg) => <p className="text-danger">{msg}</p>}
             </ErrorMessage>
           </Col>
         </FormGroup>
