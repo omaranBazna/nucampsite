@@ -51,11 +51,22 @@ const CommentForm = ({ campsiteId }) => {
             </FormGroup>
 
             <FormGroup>
-              <Label htmlFor=""></Label>
+              <Label htmlFor="author">Author</Label>
+              <Field
+                name="author"
+                placeholder="Your Name"
+                className="form-control"
+              />
             </FormGroup>
 
             <FormGroup>
-              <Label htmlFor=""></Label>
+              <Label htmlFor="commentText">Comment</Label>
+              <Field
+                name="commentText"
+                as="textarea"
+                rows="12"
+                className="form-control"
+              />
             </FormGroup>
           </Form>
         </Formik>
