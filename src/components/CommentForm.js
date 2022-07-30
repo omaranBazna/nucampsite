@@ -17,6 +17,7 @@ const CommentForm = ({ campsiteId }) => {
         >
           Add Comment
         </ModalHeader>
+        <ModalBody>campsite: {campsiteId}</ModalBody>
       </Modal>
     </>
   );
