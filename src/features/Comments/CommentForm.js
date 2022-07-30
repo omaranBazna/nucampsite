@@ -34,6 +34,7 @@ const CommentForm = ({ campsiteId }) => {
             author: "",
             commentText: "",
           }}
+          onSubmit={handleSubmit}
         ></Formik>
       </Modal>
     </>
