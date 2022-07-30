@@ -28,51 +28,52 @@ const CommentForm = ({ campsiteId }) => {
         >
           Add Comment
         </ModalHeader>
+        <ModalBody>
+          <Formik
+            initialValues={{
+              rating: "",
+              author: "",
+              commentText: "",
+            }}
+            onSubmit={handleSubmit}
+          >
+            <Form>
+              <FormGroup>
+                <Label htmlFor="rating">Rating</Label>
+                <Field name="rating" as="select" className="form-control">
+                  <option>Select...</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </Field>
+              </FormGroup>
 
-        <Formik
-          initialValues={{
-            rating: "",
-            author: "",
-            commentText: "",
-          }}
-          onSubmit={handleSubmit}
-        >
-          <Form>
-            <FormGroup>
-              <Label htmlFor="rating">Rating</Label>
-              <Field name="rating" as="select" className="form-control">
-                <option>Select...</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </Field>
-            </FormGroup>
+              <FormGroup>
+                <Label htmlFor="author">Author</Label>
+                <Field
+                  name="author"
+                  placeholder="Your Name"
+                  className="form-control"
+                />
+              </FormGroup>
 
-            <FormGroup>
-              <Label htmlFor="author">Author</Label>
-              <Field
-                name="author"
-                placeholder="Your Name"
-                className="form-control"
-              />
-            </FormGroup>
-
-            <FormGroup>
-              <Label htmlFor="commentText">Comment</Label>
-              <Field
-                name="commentText"
-                as="textarea"
-                rows="12"
-                className="form-control"
-              />
-            </FormGroup>
-            <Button type="submit" color="primary">
-              Submit
-            </Button>
-          </Form>
-        </Formik>
+              <FormGroup>
+                <Label htmlFor="commentText">Comment</Label>
+                <Field
+                  name="commentText"
+                  as="textarea"
+                  rows="12"
+                  className="form-control"
+                />
+              </FormGroup>
+              <Button type="submit" color="primary">
+                Submit
+              </Button>
+            </Form>
+          </Formik>
+        </ModalBody>
       </Modal>
     </>
   );
