@@ -1,6 +1,7 @@
 import { Button, Modal, ModalHeader, ModalBody } from "reactstrap";
 import { useState } from "react";
 import { Formik, Field, Form } from "formik";
+import { FormGroup, Label } from "reactstrap";
 const CommentForm = ({ campsiteId }) => {
   const [modalOpen, setModalOpen] = useState(false);
   const handleSubmit = (values) => {
@@ -35,7 +36,29 @@ const CommentForm = ({ campsiteId }) => {
             commentText: "",
           }}
           onSubmit={handleSubmit}
-        ></Formik>
+        >
+          <Form>
+            <FormGroup>
+              <Label htmlFor="rating">Rating</Label>
+              <Field name="rating" as="select" className="form-control">
+                <option>Select...</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </Field>
+            </FormGroup>
+
+            <FormGroup>
+              <Label htmlFor=""></Label>
+            </FormGroup>
+
+            <FormGroup>
+              <Label htmlFor=""></Label>
+            </FormGroup>
+          </Form>
+        </Formik>
       </Modal>
     </>
   );
