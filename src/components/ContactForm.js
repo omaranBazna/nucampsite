@@ -20,7 +20,11 @@ const ContactForm = () => {
             First Name
           </Label>
           <Col md="10">
-            <Form className="form-control"></Form>
+            <Field
+              name="firstName"
+              placeholder="First Name"
+              className="form-control"
+            ></Field>
           </Col>
         </FormGroup>
         <FormGroup row>
@@ -28,7 +32,11 @@ const ContactForm = () => {
             Last Name
           </Label>
           <Col md="10">
-            <Form className="form-control"></Form>
+            <Field
+              name="lastName"
+              placeholder="Last Name"
+              className="form-control"
+            ></Field>
           </Col>
         </FormGroup>
         <FormGroup row>
@@ -36,7 +44,11 @@ const ContactForm = () => {
             Phone
           </Label>
           <Col md="10">
-            <Form className="form-control"></Form>
+            <Field
+              name="phoneNum"
+              placeholder="Phone Num"
+              className="form-control"
+            ></Field>
           </Col>
         </FormGroup>
         <FormGroup row>
@@ -44,7 +56,11 @@ const ContactForm = () => {
             Email
           </Label>
           <Col md="10">
-            <Form className="form-control"></Form>
+            <Field
+              name="email"
+              placeholder="Email"
+              className="form-control"
+            ></Field>
           </Col>
         </FormGroup>
         <FormGroup row>
@@ -52,7 +68,11 @@ const ContactForm = () => {
             May we contact you
           </Label>
           <Col md="4">
-            <Form className="form-control"></Form>
+            <Field
+              name="contactType"
+              as="select"
+              className="form-control"
+            ></Field>
           </Col>
         </FormGroup>
         <FormGroup row>
