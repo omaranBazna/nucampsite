@@ -10,7 +10,13 @@ const CommentForm = ({ campsiteId }) => {
       </Button>
 
       <Modal isOpen={modalOpen}>
-        <ModalHeader toggle={setModalOpen}></ModalHeader>
+        <ModalHeader
+          toggle={() => {
+            setModalOpen(false);
+          }}
+        >
+          Add Comment
+        </ModalHeader>
       </Modal>
     </>
   );
