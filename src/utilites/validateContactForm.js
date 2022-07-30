@@ -26,4 +26,6 @@ export const validateContactForm = (values) => {
   if (!values.email.includes("@")) {
     errors.email = "Please provide valid email address ";
   }
+
+  return errors;
 };
