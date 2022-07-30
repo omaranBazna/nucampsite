@@ -4,7 +4,10 @@ const CommentForm = ({ campsiteId }) => {
   const [modalOpen, setModalOpen] = useState(false);
   return (
     <>
-      <Button onClick={() => setModalOpen(true)}></Button>
+      <Button onClick={() => setModalOpen(true)}>
+        {" "}
+        <i className="fa fa-pencil fa-lg" /> Add Comment
+      </Button>
     </>
   );
 };
