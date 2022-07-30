@@ -8,6 +8,8 @@ const CommentForm = ({ campsiteId }) => {
         {" "}
         <i className="fa fa-pencil fa-lg" /> Add Comment
       </Button>
+
+      <Modal isOpen={modalOpen}></Modal>
     </>
   );
 };
