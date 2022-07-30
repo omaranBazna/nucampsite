@@ -10,6 +10,7 @@ const CommentForm = ({ campsiteId }) => {
       author: values.author,
       text: values.commentText,
     };
+    console.log(comment);
   };
   return (
     <>
@@ -26,7 +27,14 @@ const CommentForm = ({ campsiteId }) => {
         >
           Add Comment
         </ModalHeader>
-        <ModalBody>campsite: {campsiteId}</ModalBody>
+
+        <Formik
+          initialValues={{
+            rating: "",
+            author: "",
+            commentText: "",
+          }}
+        ></Formik>
       </Modal>
     </>
   );
