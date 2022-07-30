@@ -46,7 +46,7 @@ const ContactForm = () => {
           <Col md="10">
             <Field
               name="phoneNum"
-              placeholder="Phone Num"
+              placeholder="Phone Number"
               className="form-control"
             ></Field>
           </Col>
@@ -73,6 +73,8 @@ const ContactForm = () => {
               as="select"
               className="form-control"
             ></Field>
+            <option>Phone</option>
+            <option>Email</option>
           </Col>
         </FormGroup>
         <FormGroup row>
