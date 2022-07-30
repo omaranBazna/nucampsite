@@ -91,6 +91,13 @@ const ContactForm = () => {
             ></Field>
           </Col>
         </FormGroup>
+        <FormGroup row>
+          <Col md={{ size: "10", offset: "2" }}>
+            <Buttom type="submit" color="primary">
+              Send Feedback
+            </Buttom>
+          </Col>
+        </FormGroup>
       </Form>
     </Formik>
   );
