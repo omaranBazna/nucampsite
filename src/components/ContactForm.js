@@ -4,6 +4,7 @@ import { Formik, Field, Form } from "formik";
 const ContactForm = () => {
   const handleSubmit = (values, { resetForm }) => {
     console.log(JSON.stringify(values));
+    resetForm();
   };
   return (
     <Formik
