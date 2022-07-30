@@ -1,8 +1,7 @@
 export const validateContactForm = (values) => {
   const errors = {};
-  console.log(values.firstName.length < 2);
+
   if (!values.firstName) {
-    console.log("yes first name fail");
     errors.firstName = "required";
   } else if (values.firstName.length < 2) {
     errors.firstName = "must be at least 2 characters";
