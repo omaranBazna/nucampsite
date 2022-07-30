@@ -82,6 +82,9 @@ const ContactForm = () => {
               type="email"
               className="form-control"
             ></Field>
+            <ErrorMessage name="phoneNum">
+              {(msg) => <p className="text-danger">{msg}</p>}
+            </ErrorMessage>
           </Col>
         </FormGroup>
         <FormGroup row>
