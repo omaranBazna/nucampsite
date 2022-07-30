@@ -22,4 +22,8 @@ export const validateContactForm = (values) => {
   if (!reg.test(values.phoneNum)) {
     errors.phoneNum = "phone number should only contains numbers";
   }
+
+  if (!values.email.includes("@")) {
+    errors.email = "Please provide valid email address ";
+  }
 };
