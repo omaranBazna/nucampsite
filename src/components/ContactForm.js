@@ -1,5 +1,5 @@
 import { Button, Label, FormGroup, Col } from "reactstrap";
-import { Formik, Field, Form } from "formik";
+import { Formik, Field, Form, ErrorMessage } from "formik";
 import { validateContactForm } from "../utilites/validateContactForm";
 const ContactForm = () => {
   const handleSubmit = (values, { resetForm }) => {
@@ -31,6 +31,11 @@ const ContactForm = () => {
               placeholder="First Name"
               className="form-control"
             ></Field>
+            <ErrorMessage name="firstName">
+              {(msg) => {
+                <p>{msg}</p>;
+              }}
+            </ErrorMessage>
           </Col>
         </FormGroup>
         <FormGroup row>
