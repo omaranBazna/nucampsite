@@ -1,7 +1,11 @@
-import { vButton, Modal, ModalHeader, ModalBody } from "reactstrap";
+import { Button, Modal, ModalHeader, ModalBody } from "reactstrap";
 import { useState } from "react";
 const CommentForm = ({ campsiteId }) => {
   const [modalOpen, setModalOpen] = useState(false);
-  return <></>;
+  return (
+    <>
+      <Button onClick={() => setModalOpen(true)}></Button>
+    </>
+  );
 };
 export default CommentForm;
