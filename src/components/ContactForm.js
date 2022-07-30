@@ -6,7 +6,7 @@ const ContactForm = () => {
   return (
     <Formik
       initialValues={{
-        firstName: "Omaran",
+        firstName: "",
         lastName: "",
         phoneNum: "",
         email: "",
