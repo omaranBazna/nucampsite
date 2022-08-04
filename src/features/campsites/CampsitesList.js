@@ -4,7 +4,7 @@ import { Controller } from "react-spring";
 import { selectAllCampsites } from "./campsitesSlice";
 import { useSelector } from "react-redux/es/exports";
 const CampsitesList = () => {
-  const campsites = selectAllCampsites();
+  const campsites = useSelector(selectAllCampsites);
   return (
     <Row className="ms-auto">
       {campsites.map((campsite) => {
