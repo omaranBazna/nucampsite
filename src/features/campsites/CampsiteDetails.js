@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, CardText, Card, CardImg, CardBody } from "reactstrap";
-
+import { useSelector } from "react-redux/es/exports";
 const CampsiteDetails = ({ campsite }) => {
   const { name, image, description } = campsite;
 
