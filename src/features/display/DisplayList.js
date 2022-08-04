@@ -4,6 +4,7 @@ import AnimatedDisplayCard from "./AnimatedDisplayCard";
 import { selectFeuturedPromotion } from "../promotions/promotionsSlice";
 import { selectFeaturedCampsite } from "../campsites/campsitesSlice";
 import { selectFeaturedPartner } from "../partners/partnersSlice";
+import { useSelector } from "react-redux/es/exports";
 const DisplayList = () => {
   const items = [
     selectFeaturedCampsite(),
