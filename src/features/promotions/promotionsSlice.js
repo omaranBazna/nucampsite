@@ -11,6 +11,6 @@ const promotionsSlice = createSlice({
   initialState,
 });
 export const promotionsReducer = promotionsSlice.reducer;
-export const selectFeuturedPromotion = () => {
-  return PROMOTIONS.find((pro) => pro.featured);
+export const selectFeuturedPromotion = (state) => {
+  return state.promotions.promotionsArray.find((pro) => pro.featured);
 };
