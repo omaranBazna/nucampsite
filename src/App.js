@@ -14,7 +14,6 @@ import CampsiteDetailedPage from "./app/pages/CampsiteDetailedPage";
 
 import CommentsList from "./features/Comments/CommentsList";
 
-import { Provider } from "react-redux/es/exports";
 function App() {
   return (
     <div className="App">
