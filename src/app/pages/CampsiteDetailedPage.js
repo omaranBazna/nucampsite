@@ -8,7 +8,7 @@ import SubHeader from "../../components/SubHeader";
 import { useSelector } from "react-redux/es/exports";
 const CampsiteDetailedPage = () => {
   const { campsiteid } = useParams();
-  const campsite = selectCampsiteById(campsiteid);
+  const campsite = useSelector(selectCampsiteById(campsiteid));
   return (
     <Container>
       <SubHeader current={campsite.name} detail={true} />
