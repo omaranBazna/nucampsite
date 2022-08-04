@@ -6,10 +6,12 @@ import { isCompositeComponent } from "react-dom/test-utils";
 const initialState = {
   commentsArray: COMMENTS,
 };
-const commentSlice = createSlice({
+const commentsSlice = createSlice({
   name: "comments",
   initialState,
 });
+
+export const commentsReducer = commentsSlice.reducer;
 export const selectCommentByCampsiteId = (campsiteid) => {
   return COMMENTS.filter((comment) => {
     return comment.campsiteId == campsiteid;
