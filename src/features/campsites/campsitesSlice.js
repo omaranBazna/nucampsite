@@ -1,6 +1,6 @@
 import { CAMPSITES } from "../../app/shared/CAMPSITES";
 import { createSlice } from "@reduxjs/toolkit";
-export const selectAllCampsites = () => {
+export const selectAllCampsites = (state) => {
   return CAMPSITES;
 };
 
@@ -24,6 +24,6 @@ export const selectCampsiteById = (id) => {
   });
 };
 
-export const selectFeaturedCampsite = () => {
+export const selectFeaturedCampsite = (state) => {
   return CAMPSITES.find((campsite) => campsite.featured);
 };
