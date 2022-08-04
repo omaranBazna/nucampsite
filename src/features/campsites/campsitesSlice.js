@@ -17,6 +17,7 @@ const campsitesSlice = createSlice({
   name: "campsites",
   initialState,
 });
+export const campsitesReducer = campsitesSlice.reducer;
 export const selectCampsiteById = (id) => {
   return CAMPSITES.find((campsite) => {
     return campsite.id == id;
