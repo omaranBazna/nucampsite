@@ -19,9 +19,16 @@ const campsitesSlice = createSlice({
 });
 export const campsitesReducer = campsitesSlice.reducer;
 export const selectCampsiteById = (id) => {
+  /*
   return CAMPSITES.find((campsite) => {
     return campsite.id == id;
   });
+  */
+  return function selectCampsiteByIdCallBack(state) {
+    return state.campsite.campsiteArray.find((campsite) => {
+      return campsite.id == id;
+    });
+  };
 };
 
 export const selectFeaturedCampsite = (state) => {
