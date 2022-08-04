@@ -3,6 +3,7 @@ export const validateCommentForm = (values) => {
   ///checking  the rating
   if (!values.rating) {
     errors.rating = "Required";
+    console.log("error");
   }
 
   ///checking the author
