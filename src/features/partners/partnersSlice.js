@@ -1,3 +1,4 @@
+import { createSlice } from "@reduxjs/toolkit/dist/createSlice";
 import { PARTNERS } from "../../app/shared/PARTNERS";
 export const selectAllPartners = () => {
   return PARTNERS;
