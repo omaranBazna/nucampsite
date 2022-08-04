@@ -3,6 +3,10 @@ import { PARTNERS } from "../../app/shared/PARTNERS";
 const initialState = {
   partnersArray: PARTNERS,
 };
+const partnersSlice = createSlice({
+  name: "partner",
+  initialState,
+});
 
 export const selectAllPartners = () => {
   return PARTNERS;
