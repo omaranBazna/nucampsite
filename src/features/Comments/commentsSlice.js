@@ -12,8 +12,8 @@ const commentsSlice = createSlice({
 });
 
 export const commentsReducer = commentsSlice.reducer;
-export const selectCommentByCampsiteId = (campsiteid) => {
-  return COMMENTS.filter((comment) => {
+export const selectCommentByCampsiteId = (campsiteid) => (state) => {
+  return state.comments.commentsArray.filter((comment) => {
     return comment.campsiteId == campsiteid;
   });
 };
