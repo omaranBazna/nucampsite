@@ -5,7 +5,7 @@ import CommentForm from "./CommentForm";
 
 import { useSelector } from "react-redux/es/exports";
 const CommentsList = ({ campsiteid }) => {
-  const comments = selectCommentByCampsiteId(campsiteid);
+  const comments = useSelector(selectCommentByCampsiteId(campsiteid));
   if (campsiteid && campsiteid.length > 0) {
     return (
       <Col md="5" className="m-1">
