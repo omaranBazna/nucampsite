@@ -7,6 +7,7 @@ const partnersSlice = createSlice({
   name: "partner",
   initialState,
 });
+export const partnersReducer = partnersSlice.reducer;
 
 export const selectAllPartners = () => {
   return PARTNERS;
