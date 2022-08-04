@@ -13,6 +13,7 @@ export const selectRandomCampsite = () => {
 const initialState = {
   campsiteArray: CAMPSITES,
 };
+const campsiteSlice = createSlice({});
 export const selectCampsiteById = (id) => {
   return CAMPSITES.find((campsite) => {
     return campsite.id == id;
