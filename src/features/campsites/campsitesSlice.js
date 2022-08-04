@@ -1,5 +1,5 @@
 import { CAMPSITES } from "../../app/shared/CAMPSITES";
-
+import { createSlice } from "@reduxjs/toolkit";
 export const selectAllCampsites = () => {
   return CAMPSITES;
 };
