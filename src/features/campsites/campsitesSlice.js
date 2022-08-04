@@ -10,6 +10,9 @@ export const selectRandomCampsite = () => {
 };
 
 */
+const initialState = {
+  campsiteArray: CAMPSITES,
+};
 export const selectCampsiteById = (id) => {
   return CAMPSITES.find((campsite) => {
     return campsite.id == id;
