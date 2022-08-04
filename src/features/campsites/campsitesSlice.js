@@ -15,6 +15,7 @@ const initialState = {
 };
 const campsitesSlice = createSlice({
   name: "campsites",
+  initialState,
 });
 export const selectCampsiteById = (id) => {
   return CAMPSITES.find((campsite) => {
