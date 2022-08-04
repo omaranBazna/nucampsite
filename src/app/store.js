@@ -6,5 +6,8 @@ import { promotionsReducer } from "../features/promotions/promotionsSlice";
 export const store = configureStore({
   reducer: {
     campsite: campsitesReducer,
+    partners: partnersReducer,
+    promtions: promotionsReducer,
+    comments: commentsReducer,
   },
 });
