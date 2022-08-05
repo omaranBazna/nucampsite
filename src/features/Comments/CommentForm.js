@@ -13,6 +13,7 @@ const CommentForm = ({ campsiteId }) => {
       rating: values.rating,
       author: values.author,
       text: values.commentText,
+      date:new Date(Date.now()).toISOString();
     };
     console.log(comment);
   };
