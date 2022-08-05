@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import { FormGroup, Label } from "reactstrap";
 import { validateCommentForm } from "../../utils/validateCommentForm";
+import { useDispatch } from "react-redux";
 const CommentForm = ({ campsiteId }) => {
   const [modalOpen, setModalOpen] = useState(false);
   const handleSubmit = (values) => {
