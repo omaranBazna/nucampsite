@@ -18,6 +18,7 @@ const CommentForm = ({ campsiteId }) => {
     };
     console.log(comment);
     dispatch(addComment(comment));
+    setModalOpen(false);
   };
   return (
     <>
