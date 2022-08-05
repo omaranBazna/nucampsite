@@ -12,6 +12,6 @@ export const store = configureStore({
     comments: commentsReducer,
   },
   middleware: (getDefault) => {
-    getDefault.concat([]);
+    getDefault.concat([logger]);
   },
 });
