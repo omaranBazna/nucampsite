@@ -11,5 +11,7 @@ export const store = configureStore({
     promotions: promotionsReducer,
     comments: commentsReducer,
   },
-  middleware:
+  middleware: (getDefault) => {
+    getDefault.concat([]);
+  },
 });
