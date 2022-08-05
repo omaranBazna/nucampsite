@@ -7,6 +7,7 @@ import { useDispatch } from "react-redux";
 import { addComment } from "./commentsSlice";
 const CommentForm = ({ campsiteId }) => {
   const [modalOpen, setModalOpen] = useState(false);
+  const dispatch=useDispatch();
   const handleSubmit = (values) => {
     const comment = {
       campsiteId: parseInt(campsiteId),
@@ -16,6 +17,7 @@ const CommentForm = ({ campsiteId }) => {
       date:new Date(Date.now()).toISOString();
     };
     console.log(comment);
+
   };
   return (
     <>
