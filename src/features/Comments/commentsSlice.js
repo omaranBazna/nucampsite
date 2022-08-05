@@ -19,7 +19,7 @@ const commentsSlice = createSlice({
     },
   },
 });
-
+export const { addComment } = commentsSlice.actions;
 export const commentsReducer = commentsSlice.reducer;
 export const selectCommentByCampsiteId = (campsiteid) => (state) => {
   return state.comments.commentsArray.filter((comment) => {
