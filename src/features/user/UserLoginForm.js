@@ -9,7 +9,7 @@ import {
   Label,
   Button,
 } from "reactstrap";
-import { Formik, Field, Form } from "formik";
+import { Formik, Field, Form, ErrorMessage } from "formik";
 import defaultAvatar from "../../app/assets/img/unicorn.png";
 import { validateUserLoginForm } from "../../utils/validateUserLoginForm";
 const UserLoginForm = () => {
@@ -56,6 +56,7 @@ const UserLoginForm = () => {
               password: "",
             }}
             onSubmit={handleLogin}
+            validate={validateUserLoginForm}
           >
             <Form>
               <FormGroup>
@@ -66,6 +67,9 @@ const UserLoginForm = () => {
                   placeholder="username"
                   className="form-control"
                 />
+                <ErrorMessage name="username">
+                  {(msg) => <p className="text-danger">{msg}</p>}
+                </ErrorMessage>
               </FormGroup>
 
               <FormGroup>
@@ -76,6 +80,9 @@ const UserLoginForm = () => {
                   placeholder="password"
                   className="form-control"
                 />
+                <ErrorMessage name="password">
+                  {(msg) => <p className="text-danger">{msg}</p>}
+                </ErrorMessage>
               </FormGroup>
               <Button type="submit" color="primary">
                 Log in
