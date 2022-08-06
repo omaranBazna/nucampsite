@@ -55,7 +55,19 @@ const UserLoginForm = () => {
               password: "",
             }}
             onSubmit={handleLogin}
-          ></Formik>
+          >
+            <Form>
+              <FormGroup>
+                <Label></Label>
+                <Field />
+              </FormGroup>
+
+              <FormGroup>
+                <Label></Label>
+                <Field />
+              </FormGroup>
+            </Form>
+          </Formik>
         </ModalBody>
       </Modal>
     </>
