@@ -58,14 +58,27 @@ const UserLoginForm = () => {
           >
             <Form>
               <FormGroup>
-                <Label></Label>
-                <Field />
+                <Label htmlFor="username"> Username</Label>
+                <Field
+                  id="username"
+                  name="username"
+                  placeholder="username"
+                  className="form-control"
+                />
               </FormGroup>
 
               <FormGroup>
-                <Label></Label>
-                <Field />
+                <Label htmlFor="password">Password</Label>
+                <Field
+                  id="username"
+                  name="username"
+                  placeholder="username"
+                  className="form-control"
+                />
               </FormGroup>
+              <Button type="submit" color="primary">
+                Log in
+              </Button>
             </Form>
           </Formik>
         </ModalBody>
