@@ -70,9 +70,9 @@ const UserLoginForm = () => {
               <FormGroup>
                 <Label htmlFor="password">Password</Label>
                 <Field
-                  id="username"
-                  name="username"
-                  placeholder="username"
+                  id="password"
+                  name="password"
+                  placeholder="password"
                   className="form-control"
                 />
               </FormGroup>
