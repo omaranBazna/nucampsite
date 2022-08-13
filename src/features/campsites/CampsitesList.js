@@ -23,11 +23,15 @@ const CampsitesList = () => {
             </Col>
           );
         })}
-      {is_loading && <Loading />}
+      {is_loading && (
+        <Row>
+          <Loading />
+        </Row>
+      )}
       {!is_loading && error_message.message && (
-        <div>
+        <Row>
           <Error errMsg={error_message} />
-        </div>
+        </Row>
       )}
     </Row>
   );
