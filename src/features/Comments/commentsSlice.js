@@ -18,8 +18,8 @@ export const fetchComments = createAsyncThunk(
     return data;
   }
 );
-export const postComments = createAsyncThunk(
-  "comments/postComments",
+export const postComment = createAsyncThunk(
+  "comments/postComment",
   async (comment, { dispatch }) => {
     const response = await fetch(baseUrl + "comments", {
       method: "POST",
@@ -38,6 +38,9 @@ const initialState = {
   commentsArray: [],
   isLoading: true,
   errMsg: "",
+  isUpLoadingStart: false,
+  isUploading: true,
+  UploadingMsg: "",
 };
 const commentsSlice = createSlice({
   name: "comments",
@@ -66,11 +69,11 @@ const commentsSlice = createSlice({
       state.errMsg = action.error ? action.error.message : "failed to fetch";
     },
     [postComment.rejected]: (state, action) => {
-      alert(
-        "your comment was not posted" + action.error
-          ? action.error.message
-          : "Fetch Failed"
-      );
+      state.isUpLoadingStart = false;
+      state.isLoading = false;
+      state.UploadingMsg = action.error
+        ? action.error.message
+        : "failed to Upload";
     },
   },
 });
