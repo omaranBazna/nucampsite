@@ -28,7 +28,8 @@ const CampsitesList = () => {
           <Loading />
         </Row>
       )}
-      {!is_loading && error_message.message && (
+
+      {!is_loading && error_message && (
         <Row>
           <Error errMsg={error_message} />
         </Row>

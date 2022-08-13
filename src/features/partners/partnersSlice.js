@@ -36,7 +36,7 @@ const partnersSlice = createSlice({
     },
     [fetchPartners.rejected]: (state, action) => {
       state.isLoading = false;
-      state.errMsg = action.error ? action.error : "Error";
+      state.errMsg = action.error ? action.error.message : "Error";
     },
   },
 });

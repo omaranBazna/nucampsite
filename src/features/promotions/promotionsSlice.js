@@ -36,7 +36,7 @@ const promotionsSlice = createSlice({
     [fetchPromotions.rejected]: (state, action) => {
       state.isLoading = false;
       state.promotionsArray = [];
-      state.errMsg = action.error ? action.error : "fetch failed";
+      state.errMsg = action.error ? action.error.message : "fetch failed";
     },
   },
 });

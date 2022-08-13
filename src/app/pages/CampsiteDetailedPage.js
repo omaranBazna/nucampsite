@@ -8,7 +8,7 @@ import SubHeader from "../../components/SubHeader";
 import { useSelector } from "react-redux/es/exports";
 
 import Error from "../../components/Error";
-import { isLoading } from "../../features/campsites/campsitesSlice";
+import Loading from "../../components/Loading";
 const CampsiteDetailedPage = () => {
   const { campsiteid } = useParams();
   const campsite = useSelector(selectCampsiteById(campsiteid));
@@ -18,7 +18,7 @@ const CampsiteDetailedPage = () => {
   if (isLoading) {
     return (
       <Row>
-        <isLoading />
+        <Loading />
       </Row>
     );
   }
