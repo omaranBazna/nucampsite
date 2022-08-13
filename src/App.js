@@ -1,5 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
 import { Counter } from "./features/counter/Counter";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./app/pages/HomePage";
@@ -13,8 +15,12 @@ import AboutPage from "./app/pages/AboutPage";
 import CampsiteDetailedPage from "./app/pages/CampsiteDetailedPage";
 
 import CommentsList from "./features/Comments/CommentsList";
-
+import { fetchCampsites } from "./features/campsites/campsitesSlice";
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchCampsites());
+  }, [dispatch]);
   return (
     <div className="App">
       <Header />
