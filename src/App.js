@@ -16,10 +16,13 @@ import CampsiteDetailedPage from "./app/pages/CampsiteDetailedPage";
 
 import CommentsList from "./features/Comments/CommentsList";
 import { fetchCampsites } from "./features/campsites/campsitesSlice";
+import { fetchPartners } from "./features/campsites/partnersSlice";
+
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchCampsites());
+    dispatch(fetchPartners());
   }, [dispatch]);
   return (
     <div className="App">
