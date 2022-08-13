@@ -42,3 +42,4 @@ const CampsiteDetailedPage = () => {
 export default CampsiteDetailedPage;
 
 ///close to 100
+///5  to go
