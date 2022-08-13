@@ -75,6 +75,16 @@ const commentsSlice = createSlice({
         ? action.error.message
         : "failed to Upload";
     },
+    [postComment.pending]: (state, action) => {
+      state.isUpLoadingStart = true;
+      state.isLoading = true;
+      state.UploadingMsg = "";
+    },
+    [postComment.fulfilled]: (state, action) => {
+      state.isUpLoadingStart = false;
+      state.isLoading = false;
+      state.UploadingMsg = "";
+    },
   },
 });
 export const { addComment } = commentsSlice.actions;
