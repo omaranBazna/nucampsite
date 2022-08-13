@@ -45,3 +45,4 @@ export default CampsiteDetailedPage;
 ///5  to go
 ///4 to go
 ///3 to go
+///2 to go
