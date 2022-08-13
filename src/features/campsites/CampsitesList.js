@@ -3,6 +3,8 @@ import { Col, Row } from "reactstrap";
 import { Controller } from "react-spring";
 import { selectAllCampsites } from "./campsitesSlice";
 import { useSelector } from "react-redux/es/exports";
+import Error from "../../components/Error";
+import Loading from "../../components/Loading";
 const CampsitesList = () => {
   const campsites = useSelector(selectAllCampsites);
   return (
